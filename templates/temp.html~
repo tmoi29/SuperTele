@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Occupations</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+	<th>Occupation</th>
+	<th>Percentage</th>
+      </tr>
+      {{% for i in len(dict["Jobs"]) %}}
+      <tr>
+	<td>{{dict[0][i]}}</td>
+	<td>{{dict[1][i]}}</td>
+      </tr>
+      {{% endfor %}}
+    </table>
+  </body>
+</html>
