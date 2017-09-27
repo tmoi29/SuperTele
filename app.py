@@ -1,3 +1,9 @@
+#Team SuperTele
+#Tiffany Moi and Samantha Ngo
+#SoftDev1 pd7
+#HW05--Jinja Tuning
+#2017-09-27
+
 import csv
 import sys
 import random
@@ -14,8 +20,8 @@ percent = []
 for row in jobs:
     try:
         #adds job type and percent to lists
-        job_type.append(row[0])
         percent.append(float(row[1]))
+        job_type.append(row[0])
     except:
         pass
 
@@ -35,6 +41,7 @@ def random_job():
         
 print(random_job())
 
+#makes a list of numbers so that you can use a for loop in the template
 def getLength():
     l = len(dictionary["Jobs"])
     i = 0
@@ -43,6 +50,10 @@ def getLength():
         order.append(i)
         i = i + 1
     return order
+
+@app.route("/")
+def home():
+    return 'Check out this cool <a href = "/occupations">page</a>'
 
 @app.route("/occupations")
 def occupationSetup():
