@@ -1,0 +1,9 @@
+#Team SuperTele
+#Tiffany Moi and Samantha Ngo
+#SoftDev1 pd7
+#HW05--Jinja Tuning
+#2017-09-27
+
+import csv
+import sys
+import random
