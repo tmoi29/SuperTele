@@ -2,21 +2,24 @@
 <html>
   <head>
     <title>Occupations</title>
+    <h1 align="center"> - Occupations -  </h1>
+    <h2> Here is a list of occupations in the world and what percentage of the population they make up!</h2>
   </head>
   <body>
-    <table border = "1">
+    <table border = "1"> <!--build a table-->
       <tr>
 	<th>Occupation</th>
 	<th>Percentage</th>
       </tr>
-      {% for i in length %}
+      {% for i in length %} <!--loop through a list of indexes from 0 - length of dictionary-->
       <tr>
-	<td>{{dict["Jobs"][i]}}</td>
-	<td>{{dict["Percent"][i]}}</td>
+	<td>{{dict["Jobs"][i]}}</td> <!--add the job name-->
+	<td>{{dict["Percent"][i]}}</td> <!--add the corresponding percentage--> 
       </tr>
       {% endfor %}
     </table>
     <br>
+    <h2> Need help choosing an occupation? Check out this suggestion</h2>
     <h3>Random Occupation:</h3> {{job}}
   </body>
 </html>
